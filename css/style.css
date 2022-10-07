@@ -1,0 +1,328 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 130vh;
+    background-image: url('../media/img/lap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+img {
+    width: 10%;
+    height: 5%;
+    padding: 10px;
+}
+
+#navBar {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#navBar ul {
+    display: flex;
+    margin-left: 600px;
+    margin-top: 13px;
+
+}
+
+
+
+#navBar ul li {
+    list-style: none;
+    padding: 20px;
+    position: relative;
+
+} 
+
+#navBar ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(131, 117, 117);
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+#navBar ul li a:hover {
+    color: rgb(37, 35, 35);
+    cursor: pointer;
+}
+.Contain {
+    text-align: center;
+    margin-top: 10vh;
+    color: rgb(252, 249, 249);
+    line-height: 1rem;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+    0% {top: -30px}
+    100% {top: 70px}
+
+}
+.article {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+
+}
+.article1 {
+    font-size: 5rem;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+   
+}
+.sidenav {
+    color: black;
+}
+#font {
+    margin-top: 20vh;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px 30px;
+    color: white;
+}
+
+#font:hover {
+    background-color: white;
+    color: rgb(25, 25, 139);
+}
+
+.fontContainer {
+    position: fixed;
+    left: 95.5vw;
+    top: 30vh;
+   
+}
+.fontdiv {
+    display: block;
+    letter-spacing: 2rem;
+    font-size: 2rem;
+    color: white;;
+}
+
+#aboutDiv {
+   text-align: center;
+   width: 30%;
+   /* opacity: 0.3; */
+   position: relative;
+   margin-top: 20vh ;
+   margin-left: 33vw;
+   color: white;
+   animation: footer;
+   animation-duration: 3s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes footer {
+    100% {bottom: 50px}
+    0% {bottom: -20px}
+}
+
+#ContainerDiv {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../media/img/lap.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    position: absolute;
+    top: 0;
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+} 
+
+#section {
+    background-color: rgba(18, 18, 230, 0.2);
+    height: 90vh;
+}
+#form {
+    display: flex;
+}
+
+#formDiv {
+    width: 30%;
+    justify-content: center; 
+    margin: 0 auto;
+}
+#email {
+    background-color: white;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 20px;
+}
+::placeholder {
+    color: grey;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+#btn {
+    padding: 12px;
+    margin-left: 10px;
+    color: rgb(245, 241, 241);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#btn:hover {
+    background-color: gray;
+    color: white;
+}
+
+ ::placeholder:hover {
+    background-color: white;
+    border: 1px solid black;
+ } 
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.para {
+    font-family: 1.2rem;
+}
+
+#fonta {
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0.9rem;
+    font-size: 2rem;
+    color: black;
+    margin-top: 5vh;
+}
+footer {
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 140vh;
+    /* margin-bottom: 30vh; */
+}
+#para1 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+}
+#footericon {
+    font-size: 2rem;
+    border: 1px solid white;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    #font {
+        margin-top: 6vh;
+        font-size: 2rem;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 20px 30px;
+        color: white;
+    }
+
+    #aboutDiv {
+        text-align: center;
+        width: 59%;
+        position: relative;
+        margin-top: 30vh;
+        margin-left: 23vw;
+        color: white;
+        animation: footer;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    } 
+
+    
+    
+    .Contain {
+        text-align: center;
+        margin-top: 5vh;
+        color: rgb(252, 249, 249);
+        /* line-height: 2rem; */
+        position: relative;
+        animation: heading;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    #form {
+        display: inline-block;
+        /* margin-right: 20vw; */
+        
+    }
+
+
+    #formDiv {
+        width: 60%;
+        justify-content: center; 
+        margin: 0 auto;
+    }
+
+    #email {
+        background-color: white;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 5px;
+    } 
+
+    footer {
+        background-color: white;
+        height: 18%;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        line-height: 10vh;
+        font-size: 1.5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        top: 200vh;
+        /* margin-bottom: 30vh; */
+    }
+
+    #btn:hover {
+        background-color: gray;
+        color: white;
+    }
+    
+    #fonta {
+        text-align: center;
+        margin: 0 auto;
+        letter-spacing: 0.9rem;
+        font-size: 2rem;
+        color: black;
+        margin-top: 10vh;
+    }
+    
+    
+}
